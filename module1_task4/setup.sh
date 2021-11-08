@@ -1,10 +1,9 @@
 #!/bin/sh
-apt-get update && apt-get install -y hugo make
-apt-get install -y wget
+apt-get update && apt-get install -y wget make
 
-arch=uname -m
+arch=$(uname -m)
 
-if [ arch -eq 'x86_64' ]
+if [ arch = 'x86_64' ]
 then
 wget https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.deb
 else
