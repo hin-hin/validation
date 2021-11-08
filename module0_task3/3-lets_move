@@ -1,0 +1,2 @@
+#!/bin/sh
+find . -type f -regex '\./[A-Z].*' -exec mv {} /tmp/u \;
