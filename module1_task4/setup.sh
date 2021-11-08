@@ -1,5 +1,6 @@
 #!/bin/sh
-apt-get update && apt-get install -y wget make
+apt-get update && apt-get install -y hugo make
+apt-get install -y wget
 
 arch=uname -m
 
