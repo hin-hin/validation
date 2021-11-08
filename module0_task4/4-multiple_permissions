@@ -1,0 +1,5 @@
+#!/bin/sh
+touch hello
+chmod u+rwx hello
+chmod g+rx hello
+chmod o+r hello
